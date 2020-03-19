@@ -1,0 +1,25 @@
+{
+  "name": "node-js-template",
+  "version": "1.0.0",
+  "description": "A basic template for an Express app",
+  "main": "app.js",
+  "repository": "https://github.com/LucasCtrl/node-js-template",
+  "author": "LucasCtrl <lucasalt@protonmail.com>",
+  "license": "Unlicenced",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint --ext .js,.hbs --ignore-path .gitignore ."
+  }
+}
