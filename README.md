@@ -16,7 +16,12 @@ $ yarn install
 
 ## 📖 Usage
 
-Start the server
+Start a dev server with nodemon for auto restarting the server when you code some changes
+```
+$ yarn dev
+```
+
+Start the server in production mode
 ```
 $ yarn start
 ```
