@@ -1,12 +1,12 @@
 
-# NodeJS template
-> A basic template for an Express app
+# Express API template
+> A basic template for an Express API
 
 ## 🔧 Installation
 
 Clone the repository
 ```
-$ git clone https://github.com/LucasCtrl/node-js-template
+$ git clone https://github.com/LucasCtrl/express-api-template
 ```
 
 Install all the dependencies
@@ -16,7 +16,7 @@ $ yarn install
 
 ## 📖 Usage
 
-Start a dev server with nodemon for auto restarting the server when you code some changes
+Start a dev server with nodemon for hot reload when you make some changes
 ```
 $ yarn dev
 ```

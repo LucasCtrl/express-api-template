@@ -1,26 +1,17 @@
+require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
-const hbs = require('express-handlebars')
+const morgan = require('morgan')
 
 const config = require('./config.json')
 
 const app = express()
 
-// Set templating engine
-app.engine(
-  'hbs',
-  hbs({
-    defaultLayout: 'main',
-    extname: '.hbs',
-  })
-)
-app.set('view engine', 'hbs')
-
-app.use(express.static('static/'))
+app.use(morgan('dev'))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use(require('./controllers'))
+app.use(require('./routes'))
 
 app.listen(config.port, () => console.log(`App listening on port ${config.port}!`))
